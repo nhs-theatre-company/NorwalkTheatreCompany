@@ -144,12 +144,12 @@ footer{
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: auto;
         gap: 0;
         list-style: none;
     }
 
     .nav-links > li {
+        position: relative;
         width: 100%;
         min-width: 0;
         text-align: center;
@@ -159,12 +159,13 @@ footer{
         display: block;
         width: 100%;
         padding: 8px 2px;
+        color: white;
         font-size: 12px;
         white-space: nowrap;
     }
 
-    /* Center the 7th item */
-    .nav-links > li:last-child {
+    /* Put the 7th item in the middle column */
+    .nav-links > li:nth-child(7) {
         grid-column: 2;
     }
 
@@ -185,10 +186,10 @@ footer{
     .dropdown:hover .dropdown-menu {
         opacity: 1;
         visibility: visible;
-        transform: translateX(-50%);
     }
 
     .dropdown-menu li a {
+        display: block;
         padding: 8px 10px;
         font-size: 11px;
         text-align: center;
