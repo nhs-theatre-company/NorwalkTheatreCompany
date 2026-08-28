@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Norwalk Theatre Co.</title>
+    <link rel="icon" type="image/png" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/1boiler.css">
+    <link rel="stylesheet" href="../css/events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="../img/logo.png" alt="Norwalk Theatre Co. Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Upcoming Shows ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="play-auditions/fall-aud.html">Fall Play</a></li>
+                    <li><a href="construction.html">Winter Play</a></li>
+                    <li><a href="construction.html">Spring Musical</a></li>
+                </ul>
+            </li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="archive.html">Archive</a></li>
+            <li><a href="leadership.html">Leadership</a></li>
+            <li><a href="construction.html">Merchandise</a></li>
+            <li><a href="construction.html">Donate</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Events</h1>
+            <p>Recent events for Norwalk Theatre Co..</p>
+        </div>
+    </section>
+
+
+    <div class="section-divider"></div>
+
+
+<!-- Display -->
+    <main class="event-board">
+
+        <div class="board-heading fade-in">
+            <p class="eyebrow">NORWALK THEATRE CO.</p>
+            <h2>What's Happening</h2>
+            <p>Keep up with auditions, meetings, performances, and other
+            events happening throughout the year.</p>
+        </div>
+
+        <div id="event-container" class="event-container">
+        <!-- You'll find most of the content in event.js -->
+        </div>
+    </main>
+
+
+<!-- Event Lightbox -->
+    <div class="event-lightbox" id="event-lightbox">
+
+        <button class="lightbox-close" id="lightbox-close">
+        &times;
+        </button>
+
+        <div class="lightbox-content">
+
+            <img id="lightbox-image" src="" alt="">
+
+            <div class="lightbox-info">
+                <p class="lightbox-date" id="lightbox-date"></p>
+                <h2 id="lightbox-title"></h2>
+                <p id="lightbox-description"></p>
+            </div>
+
+        </div>
+    </div>
+
+    
+    
+    <footer>
+        <div class="footer-content">
+            <p>2026 Norwalk Theatre Co. | Established 2021</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/nhstheatreco/" target="_blank"aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@norwalktheatreco" target="_blank" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </footer>    
+    <script src="../js/event.js"></script>
+    <script src="../js/fade.js"></script>
+
+</body>
+</html>
