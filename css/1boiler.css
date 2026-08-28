@@ -123,11 +123,12 @@ footer{
 @media screen and (max-width: 768px) {
     nav {
         position: static;
+        width: 100%;
+        height: auto;
+        padding: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: auto;
-        padding: 10px;
     }
 
     .logo {
@@ -136,28 +137,35 @@ footer{
 
     .logo img {
         height: 35px;
+        width: auto;
     }
 
     .nav-links {
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        gap: 0;
+        list-style: none;
+    }
+
+    .nav-links > li {
         width: 100%;
-        gap: 8px;
-        padding: 0;
-        margin: 0;
-    }
-
-    .nav-links li {
-        position: relative;
-        text-align: center;
         min-width: 0;
+        text-align: center;
     }
 
-    .nav-links li a {
+    .nav-links > li > a {
         display: block;
-        padding: 4px 2px;
+        width: 100%;
+        padding: 8px 2px;
         font-size: 12px;
         white-space: nowrap;
+    }
+
+    /* Center the 7th item */
+    .nav-links > li:last-child {
+        grid-column: 2;
     }
 
     .dropdown-menu {
@@ -167,7 +175,7 @@ footer{
         transform: translateX(-50%);
         min-width: 130px;
         background: #1F5E3B;
-        box-shadow: 0 4px 10px rgba(0,0,0,.2);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
         display: block;
         opacity: 0;
         visibility: hidden;
@@ -177,6 +185,7 @@ footer{
     .dropdown:hover .dropdown-menu {
         opacity: 1;
         visibility: visible;
+        transform: translateX(-50%);
     }
 
     .dropdown-menu li a {
