@@ -137,29 +137,20 @@ footer{
     }
 
     .nav-links {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
         justify-content: center;
         width: 100%;
-        gap: 4px 8px;
+        gap: 6px 12px;
     }
 
     .nav-links li {
         position: relative;
-    }
-
-    .nav-links > li:nth-child(1),
-    .nav-links > li:nth-child(2),
-    .nav-links > li:nth-child(3) {
-        flex: 0 0 auto;
-    }
-
-    .nav-links > li:nth-child(4) {
-        margin-left: 100%;
+        text-align: center;
     }
 
     .nav-links li a {
-        padding: 6px 10px;
+        padding: 6px 8px;
         font-size: 11px;
         white-space: nowrap;
     }
