@@ -102,9 +102,13 @@
 }
 
 .welcome-container{
+  justify-content:space-between;
+}
+
+.welcome-container,
+.production-container{
   display:flex;
   align-items:center;
-  justify-content:space-between;
   gap:60px;
   max-width:1200px;
   margin:auto;
@@ -179,11 +183,6 @@
 }
 
 .production-container{
-  display:flex;
-  align-items:center;
-  gap:60px;
-  max-width:1200px;
-  margin:auto;
   font-family: 'Playfair Display', serif;
 }
 
@@ -304,4 +303,102 @@
 .stat p{
   font-size:12px;
   opacity:0.7;
+}
+
+
+/*media*/
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-content {
+        padding: 25px 20px;
+        margin: 0 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    .hero-btn {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+
+    .scroll-down {
+        bottom: 20px;
+    }
+
+    .welcome {
+        padding: 50px 20px;
+    }
+
+    .welcome-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .welcome-text h2 {
+        font-size: 28px;
+    }
+
+    .welcome-text p {
+        font-size: 15px;
+    }
+
+    .production {
+        padding: 50px 20px;
+    }
+
+    .production-header {
+        margin-bottom: 30px;
+    }
+
+    .production-header h2 {
+        font-size: 32px;
+    }
+
+    .production-sub {
+        font-size: 15px;
+    }
+
+    .production-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .production-text p {
+        font-size: 15px;
+    }
+
+    .get-involved {
+        padding: 50px 20px;
+    }
+
+    .cards {
+        gap: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+    .quick-stats {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 20px;
+    }
 }

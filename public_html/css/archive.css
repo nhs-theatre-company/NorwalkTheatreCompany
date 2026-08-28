@@ -262,3 +262,67 @@ body{
 
     transform:translateY(0);
 }
+
+
+/* Mobile Adjustment */
+@media screen and (max-width: 768px) {
+    .hero {
+        min-height: 40vh;
+    }
+
+    .hero h1 {
+        font-size: 36px; 
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .archive-intro {
+        padding: 50px 20px;
+    }
+
+    .archive-intro h2 {
+        font-size: 28px;
+    }
+
+    .production-show {
+        padding: 40px 20px;
+    }
+
+    .production-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .production-main-image img {
+        height: 280px;
+    }
+
+    .production-info {
+        padding: 0;
+    }
+
+    .production-info h2 {
+        font-size: 32px;
+    }
+
+    .production-gallery {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 12px;
+    }
+
+    .gallery-image {
+        height: 120px;
+    }
+
+    .lightbox {
+        padding: 20px;
+    }
+
+    .lightbox-close {
+        top: 15px;
+        right: 20px;
+        font-size: 36px;
+    }
+}

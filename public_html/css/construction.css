@@ -3,3 +3,10 @@ main {
     padding: 250px;
     
 }
+
+/*media adjustment*/
+@media screen and (max-width: 768px) {
+    main {
+        padding: 40px 20px;
+    }
+}

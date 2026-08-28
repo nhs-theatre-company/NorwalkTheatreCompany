@@ -39,18 +39,6 @@ body{
     background-color: #111;
 }
 
-@media (max-width:768px){
-    .production-container{
-        flex-direction:column;
-        text-align:center;
-    }
-
-    .production-image img{
-        width:260px;
-    }
-}
-
-
 .production-container{
     display:flex;
     align-items:center;
@@ -117,7 +105,6 @@ body{
 }
 
 .about-text{
-    flex:1;
     transition-delay:0.2s;
 }
 
@@ -132,8 +119,12 @@ body{
     max-width:500px;
 }
 
-.about-image{
+.about-image, .about-text{
     flex:1;
+    
+}
+
+.about-image {
     transition-delay:0.5s;
 }
 
@@ -253,5 +244,69 @@ body{
 .fade-in.visible{
     opacity:1;
     transform:translateY(0);
+}
+
+
+
+/*media*/
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 40vh;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .production-container {
+        gap: 30px;
+    }
+
+    .production-text .quote {
+        font-size: 16px;
+    }
+
+    .about-show, .cast, .sign-up, .auditions, .production {
+        padding: 60px 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-text h2, .sign-up h2 {
+        font-size: 28px;
+    }
+
+    
+    .about-text p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .requirement {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .cast-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .cast-card:hover {
+        transform: none;
+    }
+
+    .sign-up p {
+        font-size: 15px;
+    }
+
+    .sign-up .btn {
+        margin-top: 25px;
+        padding: 14px 28px;
+        font-size: 16px;
+    }
 }
 

@@ -311,3 +311,101 @@ body {
     opacity:1;
     transform:translateY(0);
 }
+
+
+/*media*/
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 40vh;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .production {
+        padding: 60px 20px;
+    }
+
+    .production-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .production-image img {
+        width: 260px;
+    }
+
+    .production-text .quote {
+        font-size: 16px;
+    }
+
+    .about-show {
+        padding: 60px 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .photos {
+        padding: 60px 20px;
+    }
+
+    .slide {
+        flex: 0 0 220px;
+        margin: 0 8px;
+    }
+
+    .slide img {
+        height: 280px;
+    }
+
+    .arrow {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+
+    .cast {
+        padding: 60px 20px;
+    }
+
+    .cast-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .cast-card:hover {
+        transform: none;
+    }
+
+    .ticket-promo {
+        padding: 60px 20px;
+    }
+
+    .ticket-promo h2 {
+        font-size: 28px;
+    }
+
+    .ticket-promo p {
+        font-size: 15px;
+    }
+
+    .ticket-promo .btn {
+        margin-top: 25px;
+        padding: 14px 28px;
+        font-size: 16px;
+    }
+}
+
