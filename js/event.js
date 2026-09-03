@@ -1,6 +1,14 @@
 const events = [
 
     {
+        title: "Callbacks",
+        date: "September 2026",
+        image: "../img/events-page/callbacks.jpg",
+        description:
+            "Callbacks for macbeth Today!"
+    },
+
+    {
         title: "Drama Club",
         date: "September 2026",
         image: "../img/events-page/drama-club.png",
